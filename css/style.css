@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Allerta', sans-serif;
+  background-color: #f4f3f8;
+}
+
+/***** navbar *****/
+#navbarMonstera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px 0px;
+  margin-bottom: 60px;
+}
+
+/* logo */
+#navFirst img {
+  width: 100px;
+}
+
+/* nav-menu */
+#navMid {
+  display: flex;
+}
+
+#navMid h4 {
+  font-size: 18px;
+  margin: 0px 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+#navMid .home::after {
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+/* login &cart icon */
+#navEnd {
+  display: flex;
+}
+
+#navEnd img {
+  margin-left: 40px;
+}
+
+/****** Mid Part ******/
+#midWhole {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* whole text content part */
+#midWholePart1 {
+  padding-left: 60px;
+  width: 60%;
+}
+
+/* heading  */
+#midWholePart11 li #monstera {
+  font-size: 100px;
+  font-weight: 600;
+}
+
+/* para */
+#midWholePart11 li + li {
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+/* Discover button */
+#midWholePart121 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 220px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: #466d50;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#midWholePart121 h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#midWholePart122 img {
+  width: 14px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* service */
+#midWholePart13 {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* single service */
+.midWholePart13Parts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+/* image in service */
+.midWholePart13Parts img {
+  margin-right: 10px;
+}
+
+/* text in service */
+.midWholePart13Parts .text {
+  font-size: 12px;
+  color: #7b7b7b;
+}
+
+/* right side image content part */
+/* big image */
+#midWholePart1 + div img {
+  width: 100%;
+}
